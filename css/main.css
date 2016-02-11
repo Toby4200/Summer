@@ -1,0 +1,747 @@
+/*----------------------------
+       BEGIN swiper
+ -----------------------------*/
+/*----------------------------
+       END swiper
+ -----------------------------*/
+.clearfix:before, .container:before,
+.clearfix:after, .container:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after, .container:after {
+  clear: both;
+}
+
+html, body {
+  height: 100%;
+}
+
+h2.bordered {
+  display: table;
+  width: 100%;
+  margin-top: 37px;
+  margin-bottom: 29px;
+}
+
+h2.bordered:before {
+  content: "";
+  width: 50%;
+  display: table-cell;
+  background-image: url(../img/dashed.png);
+  background-repeat: repeat-x;
+  background-position: 0 9px;
+}
+
+h2.bordered:after {
+  content: "";
+  width: 50%;
+  display: table-cell;
+  background-image: url(../img/dashed.png);
+  background-repeat: repeat-x;
+  background-position: 0 9px;
+}
+
+h2.bordered span {
+  display: table-cell;
+  padding: 0 10px;
+  white-space: nowrap;
+  font-size: 16px;
+  font-family: 'signika';
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #093059;
+}
+
+body, td, a, p, .h {
+  font-family: 'Open Sans', arial,sans-serif;
+}
+
+/*----------------------------
+       BEGIN @FONT-FACE
+ -----------------------------*/
+@font-face {
+  font-family: 'museo-700';
+  src: url("/font/museo-700.otf");
+}
+
+@font-face {
+  font-family: 'signika';
+  font-weight: normal;
+  src: url("/font/SignikaNegative-Regular.ttf");
+}
+
+@font-face {
+  fonta-family: "signika";
+  font-weight: 600;
+  src: url("/font/SignikaNegative-Semibold.ttf");
+}
+
+@font-face {
+  fonta-family: "tekton";
+  src: url("/font/TektonPro-BoldCond.otf");
+}
+
+/*----------------------------
+       END @FONT-FACE
+ -----------------------------*/
+/*----------------------------
+       BEGIN Header & footer
+ -----------------------------*/
+header {
+  height: 104px;
+  background: #fff;
+}
+
+header .container {
+  padding-right: 0px;
+}
+
+header .logo {
+  float: left;
+  height: 104px;
+}
+
+header .logo .logo__text {
+  font-size: 36px;
+  font-family: 'museo-700';
+  display: inline-block;
+  margin-top: 51px;
+  bottom: 1px;
+  color: #06509d;
+}
+
+header .logo .logo__text:before {
+  content: " ";
+  width: 11px;
+  height: 11px;
+  background-color: #0e57a1;
+  display: inline-block;
+  line-height: 36px;
+  margin: 6px 7px 4px 1px;
+}
+
+header .menu ul {
+  margin: 0px;
+  padding: 0px;
+  height: 104px;
+  float: right;
+  display: block;
+  font-size: 0;
+}
+
+header .menu ul li {
+  height: 104px;
+  display: inline-block;
+}
+
+header .menu ul li.active {
+  box-shadow: inset 0px 22px 0px -10px #0e57a1;
+}
+
+header .menu ul li:hover {
+  box-shadow: inset 0px 22px 0px -10px #0e57a1;
+}
+
+header .menu ul li:last-of-type {
+  padding-right: 15px;
+}
+
+header .menu ul li:last-of-type a {
+  padding-right: 0px;
+}
+
+header .menu ul li a {
+  text-decoration: none;
+  color: #0e57a1;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-family: 'signika';
+  font-weight: normal;
+  padding: 0px 29.8px;
+  padding-top: 67px;
+  display: inline-block;
+}
+
+footer {
+  position: relative;
+}
+
+footer > div.container {
+  border-top: 1px dashed grey;
+  padding-top: 36px;
+  padding-bottom: 30px;
+  font-size: 11px;
+}
+
+footer > div.container > a {
+  padding: 0px 3px;
+  text-decoration: none;
+  font-size: 11px;
+  font-family: "Open Sans";
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 18px;
+}
+
+footer > div.container > a:first-of-type {
+  color: #001e3c;
+  padding-left: 0px;
+}
+
+footer > div.container > a:not(:first-of-type) {
+  color: #0e57a1;
+}
+
+footer .footer__social {
+  float: right;
+  font-size: 0px;
+  display: inline-block;
+  height: 15px;
+  margin-right: 24px;
+  margin-top: 0px;
+}
+
+footer .footer__social a {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  background-image: url("/img/footer/social-sprite.png");
+  background-repeat: no-repeat;
+  margin-right: 5px;
+}
+
+footer .footer__social a.fs-tw {
+  background-position: 0px 0px;
+}
+
+footer .footer__social a.fs-ln {
+  background-position: -22px 0px;
+}
+
+footer .footer__social a.fs-sk {
+  background-position: -45px 0px;
+}
+
+footer .footer__social a.fs-fb {
+  background-position: -66px 0px;
+}
+
+footer .footer__social a.fs-ba {
+  background-position: -84px 0px;
+}
+
+/*----------------------------
+       END Header & footer
+ -----------------------------*/
+/*----------------------------
+       BEGIN INTRO
+ -----------------------------*/
+.intro {
+  height: 495px;
+  position: relative;
+  background: url(/img/bg.jpg);
+  background-size: cover;
+}
+
+.intro .intro__social-top {
+  font-size: 0px;
+  width: 100%;
+  display: block;
+  position: absolute;
+  height: 45px;
+  background: rgba(0, 48, 96, 0.27);
+  top: 0px;
+}
+
+.intro .intro__social-top a {
+  width: 53px;
+  height: 45px;
+  display: inline-block;
+  background-image: url("/img/intro/social/sprite.png");
+  background-repeat: no-repeat;
+  margin-right: 1px;
+}
+
+.intro .intro__social-top a:hover {
+  background-color: #8eb61c;
+}
+
+.intro .intro__social-top a.s-tw {
+  background-position: 18px 15px;
+}
+
+.intro .intro__social-top a.s-li {
+  background-position: -36px 15px;
+}
+
+.intro .intro__social-top a.s-sk {
+  background-position: -91px 15px;
+}
+
+.intro .intro__social-top a.s-fb {
+  background-position: -144px 15px;
+}
+
+.intro .intro__social-top a.s-ba {
+  background-position: -198px 15px;
+}
+
+.intro .intro__description .container {
+  height: 495px;
+  background: url("/img/intro/arm-phone.png") no-repeat;
+  background-position: top 28px right -6px;
+  background-size: 764px;
+}
+
+.intro .intro__description .container .description__left-b {
+  width: 402px;
+  margin-top: 94px;
+  background: no-repeat;
+  color: white;
+}
+
+.intro .intro__description .container .description__left-b h1 {
+  font-size: 22px;
+  font-family: 'signika';
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 44px;
+  padding-right: 10px;
+}
+
+.intro .intro__description .container .description__left-b p {
+  font-size: 14px;
+  font-family: 'signika';
+  font-weight: normal;
+  margin-bottom: 27px;
+}
+
+.intro .intro__description .container .description__left-b .left-b__showcase {
+  margin-bottom: 23px;
+}
+
+.intro .intro__description .container .description__left-b .left-b__showcase a {
+  display: block;
+  float: left;
+}
+
+.intro .intro__description .container .description__left-b .left-b__showcase .span-showcase {
+  font-family: "tekton";
+  color: white;
+  font-family: "Tekton Pro";
+  font-size: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: block;
+  float: left;
+  margin-top: 36px;
+  margin-left: 27px;
+}
+
+.intro .intro__description .container .description__left-b .left-b__showcase .span-showcase:before {
+  content: '';
+  width: 38px;
+  display: inline-block;
+  background: url("/img/intro/arrow.png") no-repeat;
+  height: 19px;
+}
+
+.intro .intro__description .container .description__left-b .left-b__button span {
+  color: white;
+  font-family: "signika";
+  font-size: 14px;
+  font-weight: 400;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.intro .intro__description .container .description__left-b .left-b__button a {
+  display: inline-block;
+  border: 1px solid #12161d;
+  padding: 12.4px 14.2px;
+  text-decoration: none;
+  color: white;
+  box-shadow: inset 0 0 0 1px rgba(230, 230, 231, 0.27);
+  color: white;
+  font-family: "signika";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 12px;
+  text-transform: uppercase;
+}
+
+.intro .intro__description .container .description__left-b .left-b__button a:first-of-type {
+  background-image: linear-gradient(to bottom, #97bc20 0%, #3c6e03 100%);
+  border: 1px solid #12161d;
+  margin-right: 3px;
+}
+
+.intro .intro__description .container .description__left-b .left-b__button a:last-of-type {
+  background-image: linear-gradient(to bottom, #ce8651 0%, #8f2f0f 100%);
+  border: 1px solid #12161d;
+}
+
+/*----------------------------
+       END INTRO
+ -----------------------------*/
+/*----------------------------
+       BEGIN container
+ -----------------------------*/
+.container {
+  width: 990px;
+  margin: 0px auto;
+  padding: 0px 15px;
+  box-sizing: border-box;
+}
+
+/*----------------------------
+       END container
+ -----------------------------*/
+/*----------------------------
+       BEGIN BEST FEATURES
+ -----------------------------*/
+.features h2 {
+  display: table;
+  width: 100%;
+  margin-top: 37px;
+  margin-bottom: 29px;
+}
+
+.features h2:before {
+  content: "";
+  width: 50%;
+  display: table-cell;
+  background-image: url(../img/dashed.png);
+  background-repeat: repeat-x;
+  background-position: 0 9px;
+}
+
+.features h2:after {
+  content: "";
+  width: 50%;
+  display: table-cell;
+  background-image: url(../img/dashed.png);
+  background-repeat: repeat-x;
+  background-position: 0 9px;
+}
+
+.features h2 span {
+  display: table-cell;
+  padding: 0 10px;
+  white-space: nowrap;
+  font-size: 16px;
+  font-family: 'signika';
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #093059;
+}
+
+.features .features-container .features__feature-item {
+  width: 187px;
+  float: left;
+  margin-right: 6px;
+}
+
+.features .features-container .features__feature-item:last-of-type {
+  margin-right: 0px;
+}
+
+.features .features-container .features__feature-item .feature-item__img {
+  height: 105px;
+  background: #f8f8f8;
+  overflow: hidden;
+}
+
+.features .features-container .features__feature-item .feature-item__img img {
+  display: block;
+  margin: 11px auto 9px;
+  overflow: hidden;
+}
+
+.features .features-container .features__feature-item .feature-item__img img.fb {
+  display: block;
+  margin: 17px auto 19px;
+  overflow: hidden;
+  height: 43px;
+}
+
+.features .features-container .features__feature-item .feature-item__img span {
+  font-family: "open-sans";
+  font-size: 13px;
+  text-align: center;
+  display: block;
+  color: #0e57a1;
+  font-weight: 700;
+}
+
+.features .features-container .features__feature-item p {
+  font-family: "open-sans";
+  font-size: 12px;
+  text-align: center;
+  display: block;
+  color: #5a5a5a;
+  font-weight: 700;
+  font-weight: 600;
+  padding: 0px 14px;
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+.features .features-container .features__feature-item a {
+  color: #0e57a1;
+  font-family: "Open Sans";
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 15px;
+  text-decoration: underline;
+  display: block;
+  text-align: center;
+}
+
+/*----------------------------
+       END BEST FEATURES
+ -----------------------------*/
+/*----------------------------
+       BEGIN THIRD BLOCK
+ -----------------------------*/
+.third-block .showcase {
+  float: left;
+  width: 380px;
+  margin-right: 7px;
+}
+
+.third-block .showcase h2 {
+  margin-top: 36px;
+  margin-bottom: 25px;
+}
+
+.third-block .showcase h2:before {
+  content: "";
+  width: 51%;
+  display: table-cell;
+  background-image: url(../img/dashed.png);
+  background-repeat: repeat-x;
+  background-position: 0 9px;
+}
+
+.third-block .showcase a {
+  display: block;
+  float: left;
+  position: relative;
+}
+
+.third-block .showcase a:nth-of-type(2n + 1) img {
+  margin-left: 0px;
+}
+
+.third-block .showcase a:nth-of-type(2n + 2) img {
+  margin-right: 0px;
+}
+
+.third-block .showcase a img {
+  margin: 6px 7px;
+  width: 183px;
+  height: 131px;
+}
+
+.third-block .showcase a:nth-of-type(2n + 1):before {
+  content: "1";
+  position: absolute;
+  top: 6px;
+  left: 0px;
+  width: 35px;
+  height: 35px;
+  background: #001e3c;
+  color: white;
+  line-height: 35px;
+  text-align: center;
+  color: white;
+  font-family: "Open Sans";
+}
+
+.third-block .showcase a:nth-of-type(2n + 2):before {
+  content: "1";
+  position: absolute;
+  top: 6px;
+  left: 7px;
+  width: 35px;
+  height: 35px;
+  background: #001e3c;
+  color: white;
+  line-height: 35px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.third-block .news {
+  float: left;
+  width: 573px;
+}
+
+.third-block .news h2 {
+  margin-top: 36px;
+}
+
+.third-block .news h2:before {
+  content: "";
+  width: 42%;
+  display: table-cell;
+  background-image: url(../img/dashed.png);
+  background-repeat: repeat-x;
+  background-position: 0 9px;
+}
+
+.third-block .news h2.bordered {
+  margin-bottom: 30px;
+}
+
+.third-block .news .news-table {
+  display: table;
+  border-spacing: 0px 1px;
+  table-layout: fixed;
+}
+
+.third-block .news .news-table .news__news-item {
+  display: table-row;
+}
+
+.third-block .news .news-table .news__news-item .news-item__date {
+  display: table-cell;
+  width: 92px;
+  vertical-align: middle;
+}
+
+.third-block .news .news-table .news__news-item .news-item__date span {
+  display: block;
+  text-align: center;
+  color: #0e57a1;
+  font-family: "Open Sans";
+  font-weight: 600;
+}
+
+.third-block .news .news-table .news__news-item .news-item__date .day {
+  /* Base text style */
+  font-size: 24px;
+}
+
+.third-block .news .news-table .news__news-item .news-item__date .month {
+  font-size: 10px;
+}
+
+.third-block .news .news-table .news__news-item .news-item__date .year {
+  font-size: 10px;
+}
+
+.third-block .news .news-table .news__news-item .news__content {
+  display: table-cell;
+  border-left: 1px solid #3f8cdb;
+  padding: 10px 10px 10px 20px;
+  line-height: 18.5px;
+  background-color: #f8f8f8;
+  color: #5a5a5a;
+  font-family: "Open Sans";
+  font-size: 11px;
+  position: relative;
+}
+
+.third-block .news .news-table .news__news-item .news__content a {
+  font-family: "Open Sans";
+  font-size: 11px;
+  line-height: 18px;
+  color: #0e57a1;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.third-block .news .news-table .news__news-item .news__content a.button {
+  background-color: #001e3c;
+  padding: 7px 27px;
+  position: absolute;
+  right: 0px;
+  bottom: 9px;
+  color: white;
+  font-family: "Open Sans";
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 18px;
+  text-decoration: none;
+}
+
+/*----------------------------
+       END THIRD BLOCK
+ -----------------------------*/
+/*----------------------------
+       BEGIN PEOPLE SAY
+ -----------------------------*/
+.p-say-h2 h2 {
+  margin-top: 32px;
+  margin-bottom: 31px;
+}
+
+.p-say {
+  background: #f1f1f1;
+  margin-bottom: 48px;
+}
+
+.p-say .container .swiper-wrapper {
+  height: 294px;
+}
+
+.p-say .container .swiper-wrapper .swiper-slide .p-say__item .p-say__item-say {
+  position: relative;
+}
+
+.p-say .container .swiper-wrapper .swiper-slide .p-say__item .p-say__item-say p {
+  font-family: "Open Sans";
+  font-size: 11px;
+  line-height: 18px;
+  height: 118px;
+  background: white;
+  padding: 14px 22px 5px 22px;
+  margin-top: 21px;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+.p-say .container .swiper-wrapper .swiper-slide .p-say__item .p-say__item-say p:after {
+  content: "";
+  border-top: 0px solid transparent;
+  border-bottom: 42px solid transparent;
+  border-right: 25px solid white;
+  display: block;
+  position: absolute;
+  top: 136px;
+  left: 28px;
+}
+
+.p-say .container .swiper-wrapper .swiper-slide .p-say__item .p-say__item-person {
+  padding: 0px 0 0 22px;
+  display: table;
+  table-layout: fixed;
+  width: 212.75px;
+}
+
+.p-say .container .swiper-wrapper .swiper-slide .p-say__item .p-say__item-person .img {
+  display: table-cell;
+  width: 63px;
+}
+
+.p-say .container .swiper-wrapper .swiper-slide .p-say__item .p-say__item-person span {
+  color: #0e57a1;
+  font-family: "Open Sans";
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+  width: 150px;
+  display: inline-block;
+  display: table-cell;
+  padding-left: 20px;
+  vertical-align: middle;
+}
+
+/*----------------------------
+       END PEOPLE SAY
+ -----------------------------*/
