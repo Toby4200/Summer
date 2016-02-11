@@ -63,24 +63,24 @@ body, td, a, p, .h {
  -----------------------------*/
 @font-face {
   font-family: 'museo-700';
-  src: url("/font/museo-700.otf");
+  src: url("../font/museo-700.otf");
 }
 
 @font-face {
   font-family: 'signika';
   font-weight: normal;
-  src: url("/font/SignikaNegative-Regular.ttf");
+  src: url("font/SignikaNegative-Regular.ttf");
 }
 
 @font-face {
   fonta-family: "signika";
   font-weight: 600;
-  src: url("/font/SignikaNegative-Semibold.ttf");
+  src: url("../font/SignikaNegative-Semibold.ttf");
 }
 
 @font-face {
   fonta-family: "tekton";
-  src: url("/font/TektonPro-BoldCond.otf");
+  src: url("../font/TektonPro-BoldCond.otf");
 }
 
 /*----------------------------
@@ -207,7 +207,7 @@ footer .footer__social a {
   width: 16px;
   height: 16px;
   display: inline-block;
-  background-image: url("/img/footer/social-sprite.png");
+  background-image: url("img/footer/social-sprite.png");
   background-repeat: no-repeat;
   margin-right: 5px;
 }
@@ -241,7 +241,7 @@ footer .footer__social a.fs-ba {
 .intro {
   height: 495px;
   position: relative;
-  background: url(/img/bg.jpg);
+  background: url(../img/bg.jpg);
   background-size: cover;
 }
 
@@ -259,7 +259,7 @@ footer .footer__social a.fs-ba {
   width: 53px;
   height: 45px;
   display: inline-block;
-  background-image: url("/img/intro/social/sprite.png");
+  background-image: url("../img/intro/social/sprite.png");
   background-repeat: no-repeat;
   margin-right: 1px;
 }
@@ -290,7 +290,7 @@ footer .footer__social a.fs-ba {
 
 .intro .intro__description .container {
   height: 495px;
-  background: url("/img/intro/arm-phone.png") no-repeat;
+  background: url("../img/intro/arm-phone.png") no-repeat;
   background-position: top 28px right -6px;
   background-size: 764px;
 }
@@ -344,7 +344,7 @@ footer .footer__social a.fs-ba {
   content: '';
   width: 38px;
   display: inline-block;
-  background: url("/img/intro/arrow.png") no-repeat;
+  background: url("../img/intro/arrow.png") no-repeat;
   height: 19px;
 }
 

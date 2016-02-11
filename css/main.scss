@@ -105,25 +105,25 @@ body, td, a, p, .h {
 
 @font-face {
     font-family: 'museo-700';
-    src: url('/font/museo-700.otf');
+    src: url('../font/museo-700.otf');
 
 }
 
 @font-face {
     font-family: 'signika';
     font-weight: normal;
-    src: url('/font/SignikaNegative-Regular.ttf');
+    src: url('font/SignikaNegative-Regular.ttf');
 }
 
 @font-face {
     fonta-family: "signika";
     font-weight: 600;
-    src: url('/font/SignikaNegative-Semibold.ttf');
+    src: url('../font/SignikaNegative-Semibold.ttf');
 }
 
 @font-face {
     fonta-family: "tekton";
-    src: url('/font/TektonPro-BoldCond.otf');
+    src: url('../font/TektonPro-BoldCond.otf');
 }
 
 /*----------------------------
@@ -252,45 +252,45 @@ footer {
 
     .footer__social    {
 
-            float: right;
-            font-size: 0px;
-            //width: 100%;
-            display: inline-block;
-            //position: absolute;
-            height: 15px;
-            //background: rgba(0, 48, 96, .27);
+        float: right;
+        font-size: 0px;
+        //width: 100%;
+        display: inline-block;
+        //position: absolute;
+        height: 15px;
+        //background: rgba(0, 48, 96, .27);
         margin-right: 24px;
         margin-top: 0px;
 
 
 
-            a {
-                width: 16px;
-                height: 16px;
+        a {
+            width: 16px;
+            height: 16px;
 
-                display: inline-block;
-                background-image: url('/img/footer/social-sprite.png') ;
-                background-repeat: no-repeat;
-                margin-right: 5px;
+            display: inline-block;
+            background-image: url('img/footer/social-sprite.png') ;
+            background-repeat: no-repeat;
+            margin-right: 5px;
 
 
-                &.fs-tw {
-                    background-position: 0px 0px;
-                }
-                &.fs-ln {
-                    background-position: -22px 0px;
-                }
-                &.fs-sk {
-                    background-position: -45px 0px;
-                }
-                &.fs-fb {
-                    background-position: -66px 0px;
-                }
-                &.fs-ba {
-                    background-position: -84px 0px;
-                }
-
+            &.fs-tw {
+                background-position: 0px 0px;
             }
+            &.fs-ln {
+                background-position: -22px 0px;
+            }
+            &.fs-sk {
+                background-position: -45px 0px;
+            }
+            &.fs-fb {
+                background-position: -66px 0px;
+            }
+            &.fs-ba {
+                background-position: -84px 0px;
+            }
+
+        }
     }
 }
 
@@ -307,7 +307,7 @@ footer {
     height: 495px;
     position: relative;
     //overflow: hidden;
-    background: url(/img/bg.jpg);
+    background: url(../img/bg.jpg);
     background-size: cover;
 
     .intro__social-top {
@@ -324,7 +324,7 @@ footer {
             width: 53px;
             height: 45px;
             display: inline-block;
-            background-image: url('/img/intro/social/sprite.png') ;
+            background-image: url('../img/intro/social/sprite.png') ;
             background-repeat: no-repeat;
             margin-right: 1px;
 
@@ -358,7 +358,7 @@ footer {
 
         .container {
             height: 495px;
-            background: url("/img/intro/arm-phone.png") no-repeat;
+            background: url("../img/intro/arm-phone.png") no-repeat;
             background-position: top 28px right -6px;
             background-size: 764px;
             .description__left-b {
@@ -411,7 +411,7 @@ footer {
                             content: '';
                             width: 38px;
                             display: inline-block;
-                            background: url("/img/intro/arrow.png") no-repeat;
+                            background: url("../img/intro/arrow.png") no-repeat;
                             height: 19px;
                         }
                     }
@@ -721,7 +721,7 @@ footer {
                     vertical-align: middle;
 
                     span {
-                       display: block;
+                        display: block;
                         text-align: center;
 
                         color: #0e57a1;
@@ -878,7 +878,7 @@ footer {
                             font-size: 12px;
                             font-weight: 600;
                             line-height: 18px;
-width: 150px;
+                            width: 150px;
                             display: inline-block;
                             //padding-top: 25px 0 0 ;
                             display: table-cell;
